@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Biblioteca </title>
+
+<style>
+    .DivBarra{
+        background-color: darkcyan;
+    } 
+
+    label {
+    cursor: default;
+    }
+.warning {
+  border: 10px ridge rgb(21, 77, 122);
+  background-color: rgb(185, 185, 185);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.warning img {
+  width: 175px;
+  height: 250px;
+}
+
+.warning p {
+  font: small-caps bold 1.2rem sans-serif;
+  text-align: left;
+}
+
+.Click-here {
+  cursor: pointer;
+  background-image: linear-gradient(190deg, #f83600 0%, #fee140 100%);
+  color: #fff;
+  width: 180px;
+  text-align: center;
+  font-size:16px;
+  padding: 18px 0;
+  margin: 0 auto;
+  transition:background-image 3s ease-in-out;
+}
+.Click-here:hover{
+  transition:background-image 3s ease-in-out;
+  background-image: linear-gradient(90deg, #fee140 0%, #f83600 100%);
+}
+</style>
+
+</head>
+<body>
+
+<div class="DivBarra">
+    <img src="logo.png" width="120" height="75">
+    <h1><b>Livraria</b></h1>
+    <label for="search"> Pesquisa</label>
+    <input type="text" id="search" />
+</div>
+
+<h1><b>BEM VINDO(A)</b></h1
+  >
+<h4> INSCREVER</h4>
+<label for="username"> Nome</label>
+<input type="text" id="username" />
+
+<label for="email"> Email</label>
+<input type="text" id="email" />
+
+<label for="password"> Senha</label>
+<input type="text" id="password" />
+
+<p>
+<button type="button">Fazer login</button>
+
+<h4> LIVROS DISPONÍVEIS</h4>
+
+
+<div class="warning">
+    <img src="livro2.webp" alt="livro1">
+    <p>Ayrton Senna: Uma Lenda 
+      a Toda Velocidade: Uma Jornada<p>
+        R$53,73
+        <button type="button">Comprar</button>
+    </p>
+</div>
+
+<div class="warning">
+  <img src="livro1.webp" alt="livro1">
+  <p> Diário de um Banana<p>
+      R$46,83
+      <button type="button">Comprar</button>
+  </p>
+</div>
+
+<div class="warning">
+    <img src="livro3.webp" alt="livro1">
+    <p>O diário perdido de Gravity falls<p>
+        R$65,38
+        <button type="button">Comprar</button>
+    </p>
+</div>
+
+<h2> PAGAMENTO</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <label for="book"><i class="book"></i> Livro</label> 
+            <input type="text" id="book" name="book" placeholder=" "> <p>
+            <label for="fname"><i class="fa fa-user"></i> Nome completo</label> 
+            <input type="text" id="fname" name="firstname" placeholder=" ">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder=" ">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="Endereço" placeholder=" ">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="Cidade" placeholder=" ">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Estado</label>
+                <input type="text" id="state" name="state" placeholder=" ">
+              </div>
+              <div class="col-50">
+                <label for="zip">CEP</label>
+                <input type="text" id="zip" name="zip" placeholder=" ">
+              </div>
+            </div>
+          </div>
+            <label for="ccnum">Cartão de crédito/debito</label>
+            <input type="text" id="ccnum" name="ccnum" placeholder=" ">
+            <p>
+
+              <button type="button">Realizar compra</button>
+
+              
+            </div>
+          </div>
+
+        </div>
+        <label>
+    </div>
+  </div>
+</div>
+</body>
+</html>
